@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Vues simples 1</string>
+    <string name="hello">Bonjour tout le monde, SimpleViews1Activity</string>
+    <string name="save">Sauvegarder</string>
+    <string name="autosave">Sauvegarde automatique</string>
+    <string name="open">Ouvrir</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+</resources>
