@@ -6,12 +6,13 @@
     <string name="open">Ouvrir</string>
     <string name="option_1">Option 1</string>
     <string name="option_2">Option 2</string>
-    <string name="save_button1">You have clicked the Save button1</string>
-    <string name="open_button">You have clicked the Open button</string>
-    <string name="cbx_checked">CheckBox is checked</string>
-    <string name="cbx_unchecked">CheckBox is unchecked</string>
-    <string name="option_1_checked">Option 1 checked!</string>
-    <string name="option_2_checked">Option 2 checked!</string>
-    <string name="button_is_on">Toggle button is On</string>
-    <string name="button_is_off">Toggle button is Off</string>
+    <string name="save_button1">Vous avez cliqué sur le bouton Enregistrer 1.</string>
+    <string name="open_button">Vous avez cliqué sur le bouton Ouvrir.</string>
+    <string name="cbx_checked">La case à cocher est cochée.</string>
+    <string name="cbx_unchecked">La case à cocher n est pas cochée .</string>
+    <string name="option_1_checked">Option 1 cochée !</string>
+    <string name="option_2_checked">Option 2 cochée !</string>
+    <string name="button_is_on">Le bouton bascule est activé.</string>
+    <string name="button_is_off">Le bouton bascule est désactivé.</string>
+    <string name="Message">Do you want to exit the app?</string>
 </resources>

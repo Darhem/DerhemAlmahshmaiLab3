@@ -2,6 +2,8 @@ package com.example.simpleviews1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +20,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /** Called when the activity is first created. */
+    // 1. Instantiate an AlertDialog.Builder with its constructor.
+
+
+    @Override
+    public void onBackPressed(){
+
+        //A dialog that can show a title, up to three buttons, a list of selectable items, or a custom layout.
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.Message)
+                .setTitle(R.string.app_name)
+                .setIcon(R.drawable.yes_no_ic)
+                .setCancelable(false) // method ensures that the user cannot dismiss the dialog without answering "Yes" or "No."
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();  // Close the activity (exit the app)
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();  // Dismiss the dialog and stay in the app
+                    }
+                });
+
+        // 3. Get the AlertDialog.
+        AlertDialog dialog = builder.create();
+
+        // 4. Show the AlertDialog.
+        dialog.show();
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
