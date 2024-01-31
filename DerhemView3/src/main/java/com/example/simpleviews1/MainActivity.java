@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /** Called when the activity is first created. */
-    // 1. Instantiate an AlertDialog.Builder with its constructor.
+
 
 
     @Override

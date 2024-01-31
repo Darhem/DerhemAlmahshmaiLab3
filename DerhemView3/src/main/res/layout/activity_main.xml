@@ -22,7 +22,10 @@
 
     <EditText android:id="@+id/txtName"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Enter Some Text"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="10"/>
 
     <CheckBox android:id="@+id/chkAutosave"
         android:layout_width="fill_parent"
