@@ -14,7 +14,9 @@
     <string name="option_2_checked">Option 2 cochée !</string>
     <string name="button_is_on">Le bouton bascule est activé.</string>
     <string name="button_is_off">Le bouton bascule est désactivé.</string>
-    <string name="Message">Do you want to exit the app?</string>
-    <string name="sw_is_on">Switch is On</string>
-    <string name="sw_is_off">Switch is Off</string>
+    <string name="Message">Voulez-vous quitter l application ?</string>
+    <string name="sw_is_on">L\'interrupteur est allumé</string>
+    <string name="sw_is_off">L\'interrupteur est éteint</string>
+    <string name="myname">"Derhem Al-Mahshami "</string>
+    <string name="SID">"N01533315 "</string>
 </resources>

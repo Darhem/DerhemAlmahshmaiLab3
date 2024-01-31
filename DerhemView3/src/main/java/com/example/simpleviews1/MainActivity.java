@@ -7,10 +7,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
@@ -18,6 +20,19 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
+
+    // Define an array of image resource IDs
+    private final int[] imageIds = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4};
+    private int currentImageIndex = 0;
+
+    // Method to handle ImageButton click
+    public void onImageButtonClick(View view){
+        currentImageIndex = (currentImageIndex + 1) % imageIds.length;// Rotate through the images
+        ImageButton imageButton = findViewById(R.id.btnImg1);// Get the ImageButton
+        imageButton.setImageResource(imageIds[currentImageIndex]);// Set the new image
+        String imageName = "image" + (currentImageIndex + 1);
+        DisplayToast(getString(R.string.myname) + imageName);// Display a toast with your name and the image name
+    }
 
     public void btnSaved_clicked (View view) {
 
@@ -141,6 +156,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        String studentId = "N01533313";
+        Log.d("AppBackground",  getString(R.string.myname)+  studentId);
+    }
 
 
     private void DisplayToast(String msg)

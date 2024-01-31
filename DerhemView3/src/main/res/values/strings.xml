@@ -17,4 +17,7 @@
     <string name="Message">Do you want to exit the app?</string>
     <string name="sw_is_on">Switch is On</string>
     <string name="sw_is_off">Switch is Off</string>
+    <string name="myname">"Derhem Al-Mahshami "</string>
+    <string name="SID">"N01533315 "</string>
+
 </resources>

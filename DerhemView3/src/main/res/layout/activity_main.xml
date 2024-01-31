@@ -15,10 +15,12 @@
         android:layout_height="wrap_content"
         android:text="@string/open" />
 
-    <ImageButton android:id="@+id/btnImg1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+    <ImageButton
+        android:id="@+id/btnImg1"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:src="@drawable/image1"
+        android:onClick="onImageButtonClick"/>
 
     <EditText android:id="@+id/txtName"
         android:layout_width="fill_parent"
