@@ -14,7 +14,7 @@ import android.widget.ToggleButton;
 public class MainActivity extends AppCompatActivity {
 
     public void btnSaved_clicked (View view) {
-        DisplayToast("You have clicked the Save button1");
+        DisplayToast(getString(R.string.save_button1));
     }
 
     /** Called when the activity is first created. */
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         { //anonymous class
             //implement your event handler method
             public void onClick(View v) {
-                DisplayToast("You have clicked the Open button");
+                DisplayToast(getString(R.string.open_button));
             }
         });
 
@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v) {
                 if (((CheckBox)v).isChecked())
-                    DisplayToast("CheckBox is checked");
+                    DisplayToast(getString(R.string.cbx_checked));
                 else
-                    DisplayToast("CheckBox is unchecked");
+                    DisplayToast(getString(R.string.cbx_unchecked));
             }
         });
 
@@ -65,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rb1 = (RadioButton) findViewById(R.id.rdb1);
                 if (rb1.isChecked()) {
-                    DisplayToast("Option 1 checked!");
+                    DisplayToast(getString(R.string.option_1_checked));
                 } else {
-                    DisplayToast("Option 2 checked!");
+                    DisplayToast(getString(R.string.option_2_checked));
                 }
             }
         });
@@ -79,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v) {
                 if (((ToggleButton)v).isChecked())
-                    DisplayToast("Toggle button is On");
+                    DisplayToast(getString(R.string.button_is_on));
                 else
-                    DisplayToast("Toggle button is Off");
+                    DisplayToast(getString(R.string.button_is_off));
             }
         });
     }

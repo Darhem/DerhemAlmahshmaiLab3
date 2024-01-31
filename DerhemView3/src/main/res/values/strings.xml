@@ -6,4 +6,12 @@
     <string name="open">Open</string>
     <string name="option_1">Option 1</string>
     <string name="option_2">Option 2</string>
+    <string name="save_button1">Vous avez cliqué sur le bouton Enregistrer 1.</string>
+    <string name="open_button">Vous avez cliqué sur le bouton Ouvrir.</string>
+    <string name="cbx_checked">La case à cocher est cochée.</string>
+    <string name="cbx_unchecked">La case à cocher n est pas cochée .</string>
+    <string name="option_1_checked">Option 1 cochée !</string>
+    <string name="option_2_checked">Option 2 cochée !</string>
+    <string name="button_is_on">Le bouton bascule est activé.</string>
+    <string name="button_is_off">Le bouton bascule est désactivé.</string>
 </resources>

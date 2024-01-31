@@ -6,4 +6,12 @@
     <string name="open">Ouvrir</string>
     <string name="option_1">Option 1</string>
     <string name="option_2">Option 2</string>
+    <string name="save_button1">You have clicked the Save button1</string>
+    <string name="open_button">You have clicked the Open button</string>
+    <string name="cbx_checked">CheckBox is checked</string>
+    <string name="cbx_unchecked">CheckBox is unchecked</string>
+    <string name="option_1_checked">Option 1 checked!</string>
+    <string name="option_2_checked">Option 2 checked!</string>
+    <string name="button_is_on">Toggle button is On</string>
+    <string name="button_is_off">Toggle button is Off</string>
 </resources>
