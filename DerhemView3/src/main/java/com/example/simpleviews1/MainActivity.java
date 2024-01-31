@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -62,8 +63,9 @@ public class MainActivity extends AppCompatActivity {
         btnOpen.setOnClickListener(new View.OnClickListener()
         { //anonymous class
             //implement your event handler method
+            // Launch device settings screen
             public void onClick(View v) {
-                DisplayToast(getString(R.string.open_button));
+                startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
             }
         });
 
