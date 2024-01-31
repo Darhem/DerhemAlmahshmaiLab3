@@ -10,8 +10,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -113,8 +115,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //---ToggleButton---
-        ToggleButton toggleButton =
-                (ToggleButton) findViewById(R.id.toggle1);
+        ToggleButton toggleButton = (ToggleButton) findViewById(R.id.toggle1);
         toggleButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
@@ -124,7 +125,23 @@ public class MainActivity extends AppCompatActivity {
                     DisplayToast(getString(R.string.button_is_off));
             }
         });
+
+
+        Switch sw = (Switch) findViewById(R.id.switch1);
+
+        sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    DisplayToast(getString(R.string.sw_is_on));
+                } else {
+                    DisplayToast(getString(R.string.sw_is_off));
+                }
+            }
+        });
     }
+
+
 
     private void DisplayToast(String msg)
     {

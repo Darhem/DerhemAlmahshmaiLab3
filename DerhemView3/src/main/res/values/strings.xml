@@ -15,4 +15,6 @@
     <string name="button_is_on">Toggle button is On</string>
     <string name="button_is_off">Toggle button is Off</string>
     <string name="Message">Do you want to exit the app?</string>
+    <string name="sw_is_on">Switch is On</string>
+    <string name="sw_is_off">Switch is Off</string>
 </resources>
