@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,12 @@ import android.widget.ToggleButton;
 public class MainActivity extends AppCompatActivity {
 
     public void btnSaved_clicked (View view) {
-        DisplayToast(getString(R.string.save_button1));
+
+        // Launch a website when the Save Button is clicked
+        String web_codecadmy = "https://www.codecademy.com/";
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(web_codecadmy));
+        startActivity(intent);
     }
 
     /** Called when the activity is first created. */
